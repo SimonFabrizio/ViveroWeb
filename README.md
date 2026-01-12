@@ -1,25 +1,18 @@
-### Hola, soy Simon Fabrizio 👋
+### Hola, soy Simón Fabrizio 👋
 
-Soy estudiante de **Ingeniería en Sistemas en la UTN** y Desarrollador Web Junior. Me apasiona combinar la lógica algorítmica (Backend/C) con interfaces visuales modernas.
+Soy estudiante de **Ingeniería en Sistemas** en la UTN (Argentina) y Desarrollador Web en formación. Me apasiona combinar la lógica de bajo nivel (C) con la creatividad del desarrollo web.
 
-- 🔭 Actualmente trabajando en: **E-commerce para Viveros (SPA)**.
-- 🌱 Aprendiendo: **Desarrollo Web**.
-- 🎓 Especialidad: **Lógica de programación, Estructuras de Datos y Frontend**.
-- 📫 Contacto: [simon.fabrizio01@gmail.com](mailto:simon.fabrizio01@gmail.com)
+- 🔭 Actualmente trabajando en: **Sistemas de gestión de stock (Full Stack)**
+- 🌱 Aprendiendo: **Estructuras de datos avanzadas y JavaScript moderno**
+- 💼 Buscando: **Oportunidades como Trainee / Jr Developer**
+
+#### 🛠️ Mi Stack Técnico
+![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
+![Google Sheets](https://img.shields.io/badge/Google%20Sheets-34A853?style=for-the-badge&logo=google-sheets&logoColor=white)
 
 ---
-
-### 🛠️ Tecnologías y Herramientas
-
-<div style="display: flex; gap: 10px; margin-bottom: 20px;">
-  <img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" alt="C" />
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
-  <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" alt="JavaScript" />
-</div>
-
-<div style="display: flex; gap: 10px;">
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
-  <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-  <img src="https://img.shields.io/badge/VS_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white" alt="VS Code" />
-</div>
+[LinkedIn](https://www.linkedin.com/in/simon-fabrizio) | [Portafolio Web](https://simonfabrizio.github.io/simonfabrizio.github.io/)
