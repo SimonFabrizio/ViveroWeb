@@ -1,0 +1,9 @@
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Configuración de VS Code
+.vscode/
+
+# Basura de Windows
+desktop.ini
