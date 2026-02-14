@@ -54,7 +54,7 @@ ul {
 /* --- FONDOS (Corregidos a .jpg según tus archivos) --- */
 .body-inicio {
     background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
-                url('img/galeriafondo.png') no-repeat center center fixed;
+                url('img/galeriafondo.PNG') no-repeat center center fixed;
     background-size: cover;
 }
 
