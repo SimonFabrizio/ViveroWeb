@@ -60,7 +60,7 @@ ul {
 
 .body-visitanos {
     background: linear-gradient(rgba(253, 246, 227, 0.9), rgba(253, 246, 227, 0.9)), 
-                url('img/galeriafondo.jpg') no-repeat center center fixed;
+                url('img/galeriafondo.PNG') no-repeat center center fixed;
     background-size: cover;
 }
 
