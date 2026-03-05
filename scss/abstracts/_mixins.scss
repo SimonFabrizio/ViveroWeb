@@ -1,0 +1,15 @@
+// Mixin para animaciones (Estilos avanzados requeridos)
+@mixin efecto-tarjeta {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    &:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    }
+}
+
+// Mapa de redes para el bucle @each
+$redes: (
+    "instagram": #E1306C,
+    "facebook": #1877F2,
+    "whatsapp": #25D366
+);

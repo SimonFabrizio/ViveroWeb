@@ -7,3 +7,8 @@ Thumbs.db
 
 # Basura de Windows
 desktop.ini
+
+node_modules/
+.sass-cache/
+.vscode/
+*.css.map
