@@ -1,11 +1,27 @@
+// Grid custom para cuidados e inicio (sin Bootstrap)
+.grid-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+
+    @include respond-to('desktop') {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include respond-to('mobile') {
+        grid-template-columns: 1fr;
+    }
+}
+
 .producto-card, .card-cuidado {
     background: $blanco;
     border-radius: 15px;
     padding: 20px;
     text-align: center;
-    height: 100%;
-    
-    // Invocamos el mixin
+    box-shadow: $sombra-card;
+
+    // Mixin de hover
     @include efecto-tarjeta;
 
     img {
@@ -15,7 +31,7 @@
         border-radius: 10px;
         margin-bottom: 15px;
     }
-    
+
     .precio {
         font-size: 1.5rem;
         font-weight: bold;
@@ -23,8 +39,8 @@
     }
 }
 
-@media (max-width: 600px) {
+@include respond-to('mobile') {
     .producto-card img, .card-cuidado img {
         height: 180px;
     }
-}
+}

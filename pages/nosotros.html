@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros - La Galería de las Plantas</title>
+    <meta name="description" content="Conocé la historia de La Galería de las Plantas: nuestros orígenes, valores y el equipo apasionado que está detrás de cada planta.">
+    <meta name="keywords" content="sobre nosotros vivero, historia La Galería, equipo vivero, valores plantas, quiénes somos">
+    <meta name="author" content="La Galería de las Plantas">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Nosotros — La Galería de las Plantas">
+    <meta property="og:description" content="Conocé nuestra historia, valores y el equipo apasionado detrás de La Galería.">
+    <meta property="og:type" content="website">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../scss/main.css">
+</head>
+<body>
+    <header class="header-principal">
+        <div class="contenedor-header">
+            <a href="../index.html" aria-label="Ir al inicio">
+                <img src="../img/logogaleria.png" width="100" alt="Logo La Galería de las Plantas">
+            </a>
+            <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav aria-label="Navegación principal">
+                <ul class="nav-list" id="nav-menu">
+                    <li><a href="../index.html" class="nav-link">INICIO</a></li>
+                    <li><a href="inventario.html" class="nav-link">INVENTARIO</a></li>
+                    <li><a href="cuidados.html" class="nav-link">CUIDADOS</a></li>
+                    <li><a href="nosotros.html" class="nav-link active">NOSOTROS</a></li>
+                    <li><a href="visitanos.html" class="nav-link">VISÍTANOS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section class="nosotros-hero" aria-label="Portada de la página Nosotros">
+            <h1>NUESTRA HISTORIA</h1>
+            <p>Desde 2015 llevamos verde a cada rincón de La Plata</p>
+        </section>
+
+        <!-- Sección Historia (Flexbox) -->
+        <section class="nosotros-historia" aria-labelledby="historia-titulo">
+            <div class="historia-imagen">
+                <img src="../img/galeriafondo.PNG" alt="Interior del vivero La Galería de las Plantas" loading="lazy">
+            </div>
+            <div class="historia-texto">
+                <h2 id="historia-titulo">¿Quiénes somos?</h2>
+                <p>
+                    La Galería de las Plantas nació en 2015 con una idea simple: acercar la naturaleza a las personas que viven en la ciudad. Lo que empezó como un pequeño puesto en una feria de La Plata se convirtió en un vivero completo con más de 200 especies disponibles durante todo el año.
+                </p>
+                <br>
+                <p>
+                    Trabajamos con productores locales, priorizamos plantas de bajo mantenimiento para principiantes y ofrecemos asesoramiento personalizado a cada cliente. Nuestro objetivo es que cada persona encuentre su planta ideal y sepa cómo cuidarla.
+                </p>
+            </div>
+        </section>
+
+        <!-- Sección Valores (CSS Grid) -->
+        <section class="nosotros-valores" aria-labelledby="valores-titulo">
+            <h2 id="valores-titulo">NUESTROS VALORES</h2>
+            <div class="valores-grid">
+                <div class="valor-card">
+                    <div class="valor-icono" aria-hidden="true">🌱</div>
+                    <h3>Sustentabilidad</h3>
+                    <p>Trabajamos con productores locales y priorizamos prácticas de cultivo ecológicas y responsables.</p>
+                </div>
+                <div class="valor-card">
+                    <div class="valor-icono" aria-hidden="true">💚</div>
+                    <h3>Pasión</h3>
+                    <p>Cada planta es elegida con cuidado. Amamos lo que hacemos y eso se refleja en cada detalle.</p>
+                </div>
+                <div class="valor-card">
+                    <div class="valor-icono" aria-hidden="true">🤝</div>
+                    <h3>Comunidad</h3>
+                    <p>Creemos que compartir el amor por las plantas une a las personas. Fomentamos el intercambio y el aprendizaje.</p>
+                </div>
+                <div class="valor-card">
+                    <div class="valor-icono" aria-hidden="true">📚</div>
+                    <h3>Educación</h3>
+                    <p>Asesoramos a cada cliente para que entienda cómo cuidar su planta y disfrutarla al máximo.</p>
+                </div>
+                <div class="valor-card">
+                    <div class="valor-icono" aria-hidden="true">🏡</div>
+                    <h3>Hogar</h3>
+                    <p>Creemos que las plantas transforman los espacios y mejoran la calidad de vida de las personas.</p>
+                </div>
+                <div class="valor-card">
+                    <div class="valor-icono" aria-hidden="true">⭐</div>
+                    <h3>Calidad</h3>
+                    <p>Solo vendemos plantas sanas y en perfectas condiciones. Tu satisfacción es nuestra prioridad.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Equipo -->
+        <section class="nosotros-equipo" aria-labelledby="equipo-titulo">
+            <h2 id="equipo-titulo" class="titulo-seccion">NUESTRO EQUIPO</h2>
+            <div class="equipo-grid">
+                <div class="miembro-card">
+                    <img src="../img/logogaleria.png" alt="Foto de Marcos, fundador del vivero" class="miembro-avatar" loading="lazy">
+                    <h3>Marcos Galería</h3>
+                    <p>Fundador & Horticultor</p>
+                </div>
+                <div class="miembro-card">
+                    <img src="../img/logogaleria.png" alt="Foto de Lucía, experta en plantas de interior" class="miembro-avatar" loading="lazy">
+                    <h3>Lucía Verdes</h3>
+                    <p>Especialista en plantas de interior</p>
+                </div>
+                <div class="miembro-card">
+                    <img src="../img/logogaleria.png" alt="Foto de Santiago, asesor de jardín" class="miembro-avatar" loading="lazy">
+                    <h3>Santiago Bosco</h3>
+                    <p>Asesor de jardín & exterior</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-principal">
+        <div class="footer-contenedor">
+            <section class="footer-col">
+                <h2>Mapa del Sitio</h2>
+                <ul class="footer-links">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="inventario.html">Inventario</a></li>
+                    <li><a href="cuidados.html">Cuidados</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="visitanos.html">Visítanos</a></li>
+                </ul>
+            </section>
+            <section class="footer-col">
+                <h2>Síguenos</h2>
+                <ul class="footer-links">
+                    <li><a href="#" class="icon-instagram" aria-label="Instagram">Instagram</a></li>
+                    <li><a href="#" class="icon-facebook" aria-label="Facebook">Facebook</a></li>
+                    <li><a href="#" class="icon-whatsapp" aria-label="WhatsApp">WhatsApp</a></li>
+                </ul>
+            </section>
+            <section class="footer-col">
+                <h2>Contacto</h2>
+                <p>info@lagaleria.com</p>
+                <p>+54 221 555-5555</p>
+            </section>
+            <section class="footer-col">
+                <img src="../img/logogaleria.png" width="80" alt="Logo La Galería" loading="lazy">
+                <p>© 2025 La Galería</p>
+            </section>
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('hamburger');
+        const menu = document.getElementById('nav-menu');
+        btn.addEventListener('click', () => {
+            const open = menu.classList.toggle('open');
+            btn.classList.toggle('active');
+            btn.setAttribute('aria-expanded', open);
+        });
+    </script>
+</body>
+</html>

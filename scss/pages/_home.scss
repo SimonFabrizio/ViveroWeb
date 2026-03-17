@@ -11,6 +11,7 @@
     align-items: center;
     text-align: center;
     flex-direction: column;
+    gap: 1.5rem;
     padding: 0 20px;
 
     h1 {
@@ -18,22 +19,83 @@
         font-size: 4.5rem;
         color: $amarillo;
         text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.8);
-        margin-bottom: 15px;
         line-height: 1.1;
+        animation: fadeInUp 0.9s ease both;
     }
 
     p {
         font-size: 1.8rem;
         color: $blanco;
         text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+        animation: fadeInUp 0.9s 0.2s ease both;
     }
 }
 
-@media (max-width: 992px) {
+// Botón CTA reutilizable
+.btn-cta {
+    display: inline-block;
+    background-color: $amarillo;
+    color: $verde;
+    font-family: $fuente-texto;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 0.85rem 2.2rem;
+    border-radius: 40px;
+    border: 2px solid $amarillo;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: background $transicion, color $transicion, transform $transicion;
+    animation: fadeInUp 0.9s 0.4s ease both;
+
+    &:hover {
+        background-color: $verde;
+        color: $amarillo;
+        transform: translateY(-3px);
+    }
+
+    &--outline {
+        background-color: transparent;
+        color: $verde;
+        border-color: $verde;
+        animation: none;
+
+        &:hover {
+            background-color: $verde;
+            color: $amarillo;
+        }
+    }
+}
+
+// Sección Destacados
+.destacados-section {
+    padding: 2rem 20px 3rem;
+
+    .destacados-cta {
+        text-align: center;
+        margin-top: -0.5rem;
+    }
+
+    .producto-info {
+        h3 {
+            font-family: $fuente-titulos;
+            color: $verde;
+            font-size: 1.2rem;
+            margin-bottom: 0.3rem;
+        }
+        p {
+            font-size: 0.95rem;
+            color: $oscuro;
+            margin-bottom: 0.5rem;
+        }
+    }
+}
+
+@include respond-to('desktop') {
     .banner-home h1 { font-size: 3rem; }
 }
 
-@media (max-width: 600px) {
+@include respond-to('mobile') {
     .banner-home h1 { font-size: 2.2rem; }
-    .banner-home p { font-size: 1.1rem; }
-}
+    .banner-home p  { font-size: 1.1rem; }
+}

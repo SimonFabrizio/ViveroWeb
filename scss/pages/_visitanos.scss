@@ -7,5 +7,106 @@
 .grid-visitanos {
     background: white;
     border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: $sombra-card;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto 3rem;
+    padding: 2.5rem;
+
+    .visitanos-mapa {
+        flex: 1 1 45%;
+        text-align: center;
+
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
+    }
+
+    .contacto-info {
+        flex: 1 1 45%;
+
+        h2 {
+            font-family: $fuente-titulos;
+            font-size: 1.4rem;
+            margin-bottom: 1.2rem;
+            color: $verde;
+        }
+    }
+
+    .lista-contacto {
+        list-style: none;
+        padding-left: 0;
+
+        li {
+            margin-bottom: 0.8rem;
+        }
+    }
+
+    @include respond-to('tablet') {
+        flex-direction: column;
+        padding: 1.5rem;
+
+        .visitanos-mapa,
+        .contacto-info {
+            flex: 1 1 100%;
+        }
+    }
 }
+
+// Formulario de contacto
+.formulario-contacto {
+    max-width: 700px;
+    margin: 0 auto 4rem;
+    background: white;
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: $sombra-card;
+}
+
+.form-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.form-grupo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+
+    label {
+        font-weight: 600;
+        font-size: 0.9rem;
+        color: $oscuro;
+    }
+
+    input, textarea {
+        padding: 0.8rem 1rem;
+        border: 1.5px solid #ddd;
+        border-radius: 10px;
+        font-family: $fuente-texto;
+        font-size: 0.95rem;
+        transition: border-color $transicion, box-shadow $transicion;
+        background-color: $blanco;
+        color: $oscuro;
+
+        &:focus {
+            outline: none;
+            border-color: $verde;
+            box-shadow: 0 0 0 3px rgba(1, 48, 3, 0.1);
+        }
+    }
+
+    textarea {
+        resize: vertical;
+        min-height: 130px;
+    }
+}
+
+.form-contacto .btn-cta {
+    align-self: flex-start;
+    animation: none; // no fade en formulario
+}

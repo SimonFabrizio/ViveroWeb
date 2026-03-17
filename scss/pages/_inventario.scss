@@ -1,0 +1,39 @@
+// =========================================
+// INVENTARIO — estilos de la página
+// =========================================
+
+.body-paginas {
+    background-color: $beige;
+}
+
+// Grid de productos (alternativa custom a Bootstrap row/col)
+.grid-inventario {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+
+    @include respond-to('desktop') {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include respond-to('mobile') {
+        grid-template-columns: 1fr;
+    }
+}
+
+// Animación de entrada en las cards de inventario
+.producto-card {
+    animation: fadeIn 0.5s ease both;
+
+    h2 {
+        font-family: $fuente-titulos;
+        color: $verde;
+        margin-bottom: 0.4rem;
+        font-size: 1.2rem;
+    }
+
+    .producto-info {
+        padding-top: 0.5rem;
+    }
+}

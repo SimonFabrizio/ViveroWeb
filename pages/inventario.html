@@ -3,106 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inventario - La Galería</title>
+    <title>Inventario - La Galería de las Plantas</title>
+    <meta name="description" content="Explorá todo nuestro inventario de plantas de interior, exterior, suculentas, macetas y accesorios de jardín en La Galería de las Plantas.">
+    <meta name="keywords" content="inventario plantas, comprar plantas, monstera, calathea, helecho, lavanda, cactus, macetas, humus de lombriz">
+    <meta name="author" content="La Galería de las Plantas">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Inventario — La Galería de las Plantas">
+    <meta property="og:description" content="Explorá nuestro catálogo completo de plantas y accesorios de jardín.">
+    <meta property="og:type" content="website">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS (único componente: la grilla de productos) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../scss/main.css">
 </head>
 <body class="body-paginas">
     <header class="header-principal">
         <div class="contenedor-header">
-            <a href="../index.html">
-                <img src="../img/logogaleria.png" width="100" alt="Logo">
+            <a href="../index.html" aria-label="Ir al inicio">
+                <img src="../img/logogaleria.png" width="100" alt="Logo La Galería de las Plantas">
             </a>
-            <nav>
-                <ul class="nav-list mb-0">
+            <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav aria-label="Navegación principal">
+                <ul class="nav-list" id="nav-menu">
                     <li><a href="../index.html" class="nav-link">INICIO</a></li>
                     <li><a href="inventario.html" class="nav-link active">INVENTARIO</a></li>
                     <li><a href="cuidados.html" class="nav-link">CUIDADOS</a></li>
-                    <li><a href="visitanos.html" class="nav-link">VISITANOS</a></li>
+                    <li><a href="nosotros.html" class="nav-link">NOSOTROS</a></li>
+                    <li><a href="visitanos.html" class="nav-link">VISÍTANOS</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main class="container">
-        <h1 class="titulo-seccion text-center my-5">NUESTRO INVENTARIO</h1>
-        <section class="row g-4 mb-5 justify-content-center">
-            
+    <main class="page-container">
+        <h1 class="titulo-seccion">NUESTRO INVENTARIO</h1>
+
+        <!--
+            Componente Bootstrap: grilla de productos (row + col-*)
+            Este es el único uso de Bootstrap en esta página.
+        -->
+        <section class="row g-4 mb-5 justify-content-center" aria-label="Catálogo de productos">
+
             <article class="col-12 col-md-6 col-lg-4">
-                <div class="producto-card h-100">
-                    <img src="../img/CalatheaTriostar.png" alt="Calathea Triostar" class="img-fluid">
-                    <div class="producto-info mt-3">
-                        <h2 class="h5">Calathea Triostar</h2>
+                <div class="producto-card">
+                    <img src="../img/CalatheaTriostar.png" alt="Calathea Triostar, planta de hojas rosadas y blancas" loading="lazy" class="img-fluid">
+                    <div class="producto-info">
+                        <h2>Calathea Triostar</h2>
                         <p class="precio">$2500</p>
                     </div>
                 </div>
             </article>
 
             <article class="col-12 col-md-6 col-lg-4">
-                <div class="producto-card h-100">
-                    <img src="../img/PileaPeperomioides.png" alt="Pilea Peperomioides" class="img-fluid">
-                    <div class="producto-info mt-3">
-                        <h2 class="h5">Pilea Peperomioides</h2>
+                <div class="producto-card">
+                    <img src="../img/PileaPeperomioides.png" alt="Pilea Peperomioides, planta de hojas redondas verdes" loading="lazy" class="img-fluid">
+                    <div class="producto-info">
+                        <h2>Pilea Peperomioides</h2>
                         <p class="precio">$1800</p>
                     </div>
                 </div>
             </article>
 
             <article class="col-12 col-md-6 col-lg-4">
-                <div class="producto-card h-100">
-                    <img src="../img/MonsteraDeliciosa.png" alt="Monstera Deliciosa" class="img-fluid">
-                    <div class="producto-info mt-3">
-                        <h2 class="h5">Monstera Deliciosa</h2>
+                <div class="producto-card">
+                    <img src="../img/MonsteraDeliciosa.png" alt="Monstera Deliciosa, planta tropical de hojas grandes perforadas" loading="lazy" class="img-fluid">
+                    <div class="producto-info">
+                        <h2>Monstera Deliciosa</h2>
                         <p class="precio">$3200</p>
                     </div>
                 </div>
             </article>
 
             <article class="col-12 col-md-6 col-lg-4">
-                <div class="producto-card h-100">
-                    <img src="../img/HelechodeBoston.png" alt="Helecho de Boston" class="img-fluid">
-                    <div class="producto-info mt-3">
-                        <h2 class="h5">Helecho de Boston</h2>
+                <div class="producto-card">
+                    <img src="../img/HelechodeBoston.png" alt="Helecho de Boston, planta frondosa de ramas colgantes" loading="lazy" class="img-fluid">
+                    <div class="producto-info">
+                        <h2>Helecho de Boston</h2>
                         <p class="precio">$2100</p>
                     </div>
                 </div>
             </article>
 
             <article class="col-12 col-md-6 col-lg-4">
-                <div class="producto-card h-100">
-                    <img src="../img/Lavanda.png" alt="Lavanda" class="img-fluid">
-                    <div class="producto-info mt-3">
-                        <h2 class="h5">Lavanda</h2>
+                <div class="producto-card">
+                    <img src="../img/Lavanda.png" alt="Planta de Lavanda con flores lilas aromáticas" loading="lazy" class="img-fluid">
+                    <div class="producto-info">
+                        <h2>Lavanda</h2>
                         <p class="precio">$1500</p>
                     </div>
                 </div>
             </article>
 
             <article class="col-12 col-md-6 col-lg-4">
-                <div class="producto-card h-100">
-                    <img src="../img/CactusAsientodeSuegra.png" alt="Cactus Asiento de Suegra" class="img-fluid">
-                    <div class="producto-info mt-3">
-                        <h2 class="h5">Cactus Asiento de Suegra</h2>
+                <div class="producto-card">
+                    <img src="../img/CactusAsientodeSuegra.png" alt="Cactus Asiento de Suegra, cactus esférico con espinas" loading="lazy" class="img-fluid">
+                    <div class="producto-info">
+                        <h2>Cactus Asiento de Suegra</h2>
                         <p class="precio">$1900</p>
                     </div>
                 </div>
             </article>
 
             <article class="col-12 col-md-6 col-lg-4">
-                <div class="producto-card h-100">
-                    <img src="../img/MacetadeCementoIndustrial.png" alt="Maceta de Cemento" class="img-fluid">
-                    <div class="producto-info mt-3">
-                        <h2 class="h5">Maceta de Cemento</h2>
+                <div class="producto-card">
+                    <img src="../img/MacetadeCementoIndustrial.png" alt="Maceta de Cemento Industrial de diseño minimalista" loading="lazy" class="img-fluid">
+                    <div class="producto-info">
+                        <h2>Maceta de Cemento</h2>
                         <p class="precio">$4500</p>
                     </div>
                 </div>
             </article>
 
             <article class="col-12 col-md-6 col-lg-4">
-                <div class="producto-card h-100">
-                    <img src="../img/HumusdeLombriz.png" alt="Humus de Lombriz" class="img-fluid">
-                    <div class="producto-info mt-3">
-                        <h2 class="h5">Humus de Lombriz</h2>
+                <div class="producto-card">
+                    <img src="../img/HumusdeLombriz.png" alt="Bolsa de Humus de Lombriz, abono orgánico natural" loading="lazy" class="img-fluid">
+                    <div class="producto-info">
+                        <h2>Humus de Lombriz</h2>
                         <p class="precio">$1200</p>
                     </div>
                 </div>
@@ -111,38 +134,47 @@
         </section>
     </main>
 
-    <footer class="footer-principal py-5 mt-auto">
-        <div class="container">
-            <div class="row g-4">
-                <section class="col-12 col-md-6 col-lg-3">
-                    <h2 class="h4 text-white">Mapa del Sitio</h2>
-                    <ul class="footer-links ps-0">
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="inventario.html">Inventario</a></li>
-                        <li><a href="cuidados.html">Cuidados</a></li>
-                        <li><a href="visitanos.html">Visítanos</a></li>
-                    </ul>
-                </section>
-                <section class="col-12 col-md-6 col-lg-3">
-                    <h2 class="h4 text-white">Síguenos</h2>
-                    <ul class="footer-links ps-0">
-                        <li><a href="#" class="icon-instagram">Instagram</a></li>
-                        <li><a href="#" class="icon-facebook">Facebook</a></li>
-                        <li><a href="#" class="icon-whatsapp">WhatsApp</a></li>
-                    </ul>
-                </section>
-                <section class="col-12 col-md-6 col-lg-3">
-                    <h2 class="h4 text-white">Contacto</h2>
-                    <p>info@lagaleria.com</p>
-                    <p>+54 221 555-5555</p>
-                </section>
-                <section class="col-12 col-md-6 col-lg-3 text-start">
-                    <img src="../img/logogaleria.png" width="80" alt="Logo" class="mb-3">
-                    <p>© 2024 La Galería</p>
-                </section>
-            </div>
+    <footer class="footer-principal">
+        <div class="footer-contenedor">
+            <section class="footer-col">
+                <h2>Mapa del Sitio</h2>
+                <ul class="footer-links">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="inventario.html">Inventario</a></li>
+                    <li><a href="cuidados.html">Cuidados</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="visitanos.html">Visítanos</a></li>
+                </ul>
+            </section>
+            <section class="footer-col">
+                <h2>Síguenos</h2>
+                <ul class="footer-links">
+                    <li><a href="#" class="icon-instagram" aria-label="Instagram">Instagram</a></li>
+                    <li><a href="#" class="icon-facebook" aria-label="Facebook">Facebook</a></li>
+                    <li><a href="#" class="icon-whatsapp" aria-label="WhatsApp">WhatsApp</a></li>
+                </ul>
+            </section>
+            <section class="footer-col">
+                <h2>Contacto</h2>
+                <p>info@lagaleria.com</p>
+                <p>+54 221 555-5555</p>
+            </section>
+            <section class="footer-col">
+                <img src="../img/logogaleria.png" width="80" alt="Logo La Galería" loading="lazy">
+                <p>© 2025 La Galería</p>
+            </section>
         </div>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmxc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        const btn = document.getElementById('hamburger');
+        const menu = document.getElementById('nav-menu');
+        btn.addEventListener('click', () => {
+            const open = menu.classList.toggle('open');
+            btn.classList.toggle('active');
+            btn.setAttribute('aria-expanded', open);
+        });
+    </script>
 </body>
 </html>

@@ -3,18 +3,51 @@
     color: $blanco;
     padding: 40px 0;
     margin-top: auto;
-    
+
     a:hover {
         color: $amarillo;
     }
+
+    // Layout interno del footer (equivalente a container + row + col-*)
+    .footer-contenedor {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+
+        .footer-col {
+            flex: 1 1 180px;
+
+            h2 {
+                color: $blanco;
+                font-size: 1.1rem;
+                margin-bottom: 0.8rem;
+            }
+        }
+    }
+
+    .footer-links {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    // Bucle dinámico para colorear las redes sociales en el footer (Requisito)
+    // Se aumenta la especificidad usando el padre en lugar de !important
+    @each $red, $color in $redes {
+        .icon-#{$red} {
+            transition: color 0.3s ease;
+            &:hover {
+                color: $color;
+            }
+        }
+    }
 }
 
-// Bucle dinámico para colorear las redes sociales en el footer (Requisito)
-@each $red, $color in $redes {
-    .icon-#{$red} {
-        transition: color 0.3s ease;
-        &:hover {
-            color: $color !important;
-        }
+// Responsive: apilar columnas del footer en mobile
+@media (max-width: 600px) {
+    .footer-principal .footer-contenedor {
+        flex-direction: column;
     }
 }
