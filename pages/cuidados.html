@@ -162,10 +162,29 @@
     <script>
         const btn = document.getElementById('hamburger');
         const menu = document.getElementById('nav-menu');
+
+        function closeMenu() {
+            menu.classList.remove('open');
+            btn.classList.remove('active');
+            btn.setAttribute('aria-expanded', 'false');
+        }
+
         btn.addEventListener('click', () => {
             const open = menu.classList.toggle('open');
             btn.classList.toggle('active');
             btn.setAttribute('aria-expanded', open);
+        });
+
+        // Cerrar al hacer click en cualquier enlace del menú
+        menu.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', closeMenu);
+        });
+
+        // Cerrar al hacer click fuera del header
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.contenedor-header')) {
+                closeMenu();
+            }
         });
     </script>
 </body>

@@ -18,6 +18,32 @@
         animation: floatLogo 4s ease-in-out infinite;
     }
 
+    // Botón hamburguesa: oculto en desktop
+    .hamburger {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 8px;
+
+        span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background-color: $verde;
+            border-radius: 2px;
+            transition: transform $transicion, opacity $transicion;
+        }
+
+        // Animación de X cuando está activo
+        &.active span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+        &.active span:nth-child(2) { opacity: 0; }
+        &.active span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+    }
+
     .nav-list {
         display: flex;
         gap: 30px;
@@ -41,6 +67,36 @@
         .contenedor-header {
             flex-direction: row;
             flex-wrap: wrap;
+        }
+
+        // Mostrar el botón hamburguesa en móvil
+        .hamburger {
+            display: flex;
+        }
+
+        // Ocultar el nav por defecto en móvil
+        .nav-list {
+            display: none;
+            flex-direction: column;
+            gap: 0;
+            width: 100%;
+            background-color: $amarillo;
+            padding: 10px 20px 20px;
+
+            // Mostrar cuando tiene la clase .open
+            &.open {
+                display: flex;
+            }
+
+            li a {
+                display: block;
+                padding: 12px 0;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            }
+
+            li:last-child a {
+                border-bottom: none;
+            }
         }
     }
 }
